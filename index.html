@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <h1>Calcule seu IMC</h1>
+            </div>
+           <div class="menu">
+                <ul>
+                    <li><a href="" id="imc">IMC</a></li>
+                    <li><a href="page/media_por_2.html" id="media2">Media por 2</a></li>
+                    <li><a href="page/media_por_3.html" id="media3">Media por 3</a></li>
+                </ul>
+           </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="form">
+            <form action="" class="form-grup" method="post" id="formulario">
+                <h2>Preencha os seu dados</h2>
+               <div class="row">
+                <div class="form-g">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="input" autofocus required>
+                   </div>
+                   <div class="form-g">
+                    <label for="idade">Idade</label>
+                    <input type="number" min="0" max="130" name="idade" id="idade" class="input" required>
+                   </div>
+                   <div class="form-g">
+                    <label for="peso">Peso</label>
+                    <input type="number" step="0.01" min="0.00" max="500.0" name="peso" id="peso" class="input" required>
+                   </div>
+                   <div class="form-g">
+                    <label for="altura">Altura</label>
+                    <input type="number" step="0.01" min="0.0" max="2.70" name="altura" id="altura" class="input" required>
+                   </div>
+                   <!-- Botões -->
+                   <div class="button-g">
+                    <button type="submit" class="botao1" id="btnCalcular">Calcular</button>
+                    <button type="reset" class="botao2" id="btnLimpar">Limpar</button>
+                   </div>
+                   <div class="form-imc">
+                    <label for="">IMC</label>
+                    <input type="number" name="imc" id="resultado1" class="input" value="0.0" disabled>
+                    <span id="aviso"></span>
+                   </div>
+               </div>
+            </form>
+            <div id="resultado">
+                <h2 id="id" class="pessoa">Resultado do calculo de IMC</h2>
+                <p id="nome" class="pessoa"></p>
+                <p id="idade" class="pessoa"></p>
+                <p id="peso" class="pessoa"></p>
+                <p id="altura" class="pessoa"></p>
+                <p id="imc" class="pessoa"></p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/imc.js"></script>
+    <script src="js/media2.js"></script>
+</body>
+</html>

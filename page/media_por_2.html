@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média por dois</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <h1>Calcule seu IMC</h1>
+            </div>
+           <div class="menu">
+                <ul>
+                    <li><a href="../index.html" id="imc">IMC</a></li>
+                    <li><a href="" id="media2">Media por 2</a></li>
+                    <li><a href="../page/media_por_3.html" id="media3">Media por 3</a></li>
+                </ul>
+           </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="media">
+            <form action="post" class="form-grup" id="formulario">
+             <h2>Digite as notas</h2>
+             <div class="row">
+                 <div class="form-g">
+                     <label for="nota1" class="texto">Nota 1</label>
+                     <input type="number" step="0.0" min="0" max="10" id="nota1" name="nota1" class="input" autofocus required onblur='validarNumero (this)'>
+                 </div>
+                 <div class="form-g">
+                     <label for="nota2" class="texto">Nota 2</label>
+                     <input type="number" step="0.0" min="0" max="10" id="nota2" name="nota2" class="input" required onblur='validarNumero (this)'>
+                 </div>
+                 <div class="form-g">
+                     <button type="submit" class="btnMedia">Calcular Nota</button>
+                     <button type="reset" class="botao2" id="btn_2">Limpar</button>
+                 </div>
+                 <div class="form-g">
+                     <label for="media" class="texto-l">Média</label>
+                     <input type="number" name="media" class="input" value="0.0" id="resultado2" readonly>
+                 </div>
+                 <div class="form-g">
+                     <input type="text" name="situacao" class="aluno" id="situacao" placeholder="Situação Final" readonly>
+                 </div>
+             </div>
+             <p id="avisos"></p>
+            </form>
+            
+         </div>
+    </main>
+
+    <script src="../js/media2.js"></script>
+</body>
+</html>
